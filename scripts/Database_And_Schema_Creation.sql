@@ -12,7 +12,6 @@ Running this script will drop the entire 'Datawarehouse' database if it exists.
 All data in the database will be permanently deleted. Proceed with caution and ensure you have proper backups before running this script.
 */ 
 
-
 -- Drop and recreate the 'Datawarehouse' database
 IF EXISTS (SELECT 1 FROM sys. databases WHERE name = 'DataWarehouse')
 BEGIN
@@ -27,7 +26,7 @@ GO
 
 USE datawarehouse;
 GO
-
+  
 -- Creating schema for each layer:-
 create schema bronze;
 GO
